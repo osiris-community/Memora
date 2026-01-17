@@ -9,17 +9,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const MemAppBar(),
-      body: Row(
-        spacing: 10,
-        children: [
-          SizedBox(
-            width: 160,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 8.0),
-              child: const NotesList(),
-            ),
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.only(top: 8.0),
+        child: const NotesList(),
       ),
     );
   }
